@@ -24,36 +24,15 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-  },
-  {
-    id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-  },
-  {
-    id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-  },
-  {
-    id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-  },
+    title: 'Comparative Study of IoT Protocols: A Smart Agriculture Perspective',
+    authors: 'Rashid, A.; Ali, Z.; Ali, A.; Ahmad, W.; Ashraf, M.U.',
+    conference: 'IoT 2024 Conference',
+    year: '2024',
+    url: 'https://sciforum.net/paper/view/20757',
+    abstract: 'This study presents a comparative analysis of various IoT protocols in the context of smart agriculture, evaluating their performance, efficiency, and suitability for agricultural applications.',
+    keywords: ['IoT', 'Smart Agriculture', 'Protocol Analysis']
+  }
+  // You can add more papers here following the same structure
 ];
 
 export const myProjects = [
@@ -260,29 +239,29 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    name: 'NPTEL',
+    pos: 'Cloud Computing',
+    duration: 'Jul 2024 - Oct 2024',
+    title: "NPTEL's Cloud Computing course provided me with a strong foundation in cloud technologies. Scoring 75%, I gained insights into cloud architecture, virtualization, and distributed computing, enhancing my ability to design scalable and efficient cloud-based solutions.",
+    icon: '/assets/icons8-cloud-computing-94.png',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    name: ' GIET University ',
+    pos: 'Machine Learning Internship',
+    duration: 'Jun 2024 - Jul 2024',
+    title: "My machine learning internship at GIET helped me develop practical skills in AI. I worked on real-world datasets, implemented predictive models, and gained experience in data preprocessing, feature engineering, and model evaluation for effective decision-making",
+    icon: '/assets/icons8-machine-learning-80.png',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
+    name: 'Yhills',
+    pos: 'Machine Learning',
+    duration: ' Feb 2024 - Jun 2024',
+    title: "My machine learning internship at Yhills involved working on three simple projects: 'Stock Price Prediction,' 'House Price Prediction,' and 'Customer Churn Prediction.' I worked on data cleaning, feature engineering, and model evaluation to gain hands-on experience in applying machine learning techniques to solve real-world problems.",
+    icon: '/assets/icons8-machine-learning-48 (1).png',
     animation: 'salute',
   },
 ];
