@@ -6,10 +6,8 @@ import Alert from '../components/Alert.jsx';
 
 const Contact = () => {
   const formRef = useRef();
-
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
-
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
   const handleChange = ({ target: { name, value } }) => {
@@ -20,6 +18,9 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    // Combine the email address with the message
+    const enhancedMessage = `From Email: ${form.email}\n\nMessage:\n${form.message}`;
+
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -28,8 +29,8 @@ const Contact = () => {
           from_name: form.name,
           to_name: 'Satyajit',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
-          message: form.message,
+          to_email: 'satyajitpujapanda9@gmail.com',
+          message: enhancedMessage,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
@@ -74,8 +75,8 @@ const Contact = () => {
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
+            Whether you're looking to build a new website, improve your existing platform, or bring a unique project to
+            life, I'm here to help.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
@@ -120,7 +121,6 @@ const Contact = () => {
 
             <button className="field-btn" type="submit" disabled={loading}>
               {loading ? 'Sending...' : 'Send Message'}
-
               <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>
           </form>
